@@ -18,13 +18,20 @@ const projects = [
         link: "https://petcare-anik.netlify.app/",
         github: "https://github.com/anik-33/Pet-Care-Service.git"
     },
-    // https://i.ibb.co.com/nsw9Zv8b/Screenshot-2025-12-05-170020.jpg
-    // https://i.ibb.co.com/JWGWT2sH/Screenshot-2025-12-05-165737.jpg
+    {
+        title: "Hero Apps - App Landing Page",
+        description: "A modern, responsive, and user-friendly React +  smooth animations, secure authentication, and an engaging UI.",
+        tech: ["JavaScript", "React.js", "Vite", "Tailwind CSS"],
+        image: "https://i.ibb.co.com/8gpm1XDZ/Screenshot-2025-12-06-131624.jpg",
+        link: "https:hero-app-anik.netlify.app/",
+        github: "https://github.com/anik-33/Hero-App.git"
+    },
+   
 ];
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-16 sm:py-24 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+        <section id="projects" className="py-10 sm:py-10 bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -39,7 +46,7 @@ const Projects = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
@@ -57,7 +64,7 @@ const Projects = () => {
                                 />
                                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                             </div>
-                            <div className="p-6">
+                            <div className="p-2">
                                 <div className="flex justify-between items-start mb-4">
                                     <h3 className="text-xl font-bold">{project.title}</h3>
                                     <div className="flex space-x-3">

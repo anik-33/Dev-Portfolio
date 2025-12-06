@@ -96,12 +96,12 @@ export default function TechStack() {
                                     }
                                 }}
                                 className="group relative flex items-center justify-center h-24 w-24 rounded-2xl 
-                           bg-white dark:bg-[#2d3748] border border-gray-200 dark:border-white/10 hover:border-blue-500
+                           bg-white dark:bg-[#2d3748] border border-gray-200 dark:border-white/10 hover:border-blue-400
                            shadow-md hover:shadow-[0_0_25px_#3b82f6] transition-all"
                             >
                                 {/* Glow */}
                                 <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition 
-                                bg-gradient-to-r from-blue-500 to-indigo-500 blur-xl"></div>
+                                bg-gradient-to-r from-blue-400 to-indigo-400 blur-xl"></div>
 
                                 {/* JSX Stack Icon */}
                                 <StackIcon

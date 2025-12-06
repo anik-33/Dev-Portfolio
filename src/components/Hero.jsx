@@ -5,6 +5,7 @@ import useTypewriter from '../hooks/useTypewriter';
 
 import heroImage from '../assets/heroimg.png';
 import img from '../assets/hero.png';
+import myimg from '../assets/myimg.png';
 
 const Hero = () => {
     const imageRef = useRef(null);
@@ -66,7 +67,7 @@ const Hero = () => {
     };
 
     return (
-        <main id="home" className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-16 py-12 lg:py-20 pt-32 lg:pt-40">
+        <main id="home" className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-16 py-12 lg:py-20 pt-20 lg:pt-4rem">
             <motion.div
                 className="text-gray-900 dark:text-gray-100"
                 variants={containerVariants}
@@ -120,8 +121,8 @@ const Hero = () => {
                 <img
                     ref={imageRef}
                     alt="Illustration of a developer working at a desk with multiple monitors"
-                    className="w-full  max-w-lg h-auto"
-                    src={img}
+                    className="w-full rounded-full  max-w-lg h-auto"
+                    src={myimg}
                 />
             </div>
         </main>
