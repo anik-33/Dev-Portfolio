@@ -6,6 +6,7 @@ import useTypewriter from '../hooks/useTypewriter';
 import heroImage from '../assets/heroimg.png';
 import img from '../assets/hero.png';
 import myimg from '../assets/myimg.png';
+import myImg from '../assets/IMG.JPG';
 
 const Hero = () => {
     const imageRef = useRef(null);
@@ -118,12 +119,25 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
             <div className="flex items-center justify-center">
-                <img
-                    ref={imageRef}
-                    alt="Illustration of a developer working at a desk with multiple monitors"
-                    className="w-full rounded-full  max-w-lg h-auto"
-                    src={myimg}
-                />
+                <div className="relative group">
+                    {/* Animated glow background */}
+                    {/* <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full opacity-75 group-hover:opacity-100 blur-lg animate-pulse-slow"></div> */}
+
+                    {/* Main image container */}
+                    <div className="relative mt-6">
+                        <div className="relative rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg
+                        ">
+                            <img
+                                ref={imageRef}
+                                alt="Illustration of a developer working at a desk with multiple monitors"
+                                className="w-full max-w-lg aspect-square object-cover"
+                                src={myImg}
+                            />
+                            {/* Overlay gradient */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     );
